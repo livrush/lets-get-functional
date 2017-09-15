@@ -1,6 +1,7 @@
 {
   "name": "lets-get-functional",
   "version": "1.0.0",
+  "private": true,    
   "description": "Getting jiggy with higher order functions",
   "main": "index.js",
   "directories": {
@@ -8,7 +9,9 @@
   },
   "scripts": {
     "start": "npm i && watchify ./spec/index.spec.js -o ./spec/bundle.spec.js",
-    "test": "mocha ./test/index.spec.js"
+    "preinstall": "npm install",
+    "test": "mocha ./test/index.spec.js || :",
+    "posttest": "rm -rf ./test ./node_modules"
   },
   "repository": {
     "type": "git",
