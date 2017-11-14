@@ -11,73 +11,77 @@ An exercise in problem solving in the functional idiom.
  - Run `os install` to install `Lets Get Functional`
  - Copy the name of your `lodown`package. It should be something like `lodown-<your-username>`
  - In your bash terminal run the command `npm install --global lodown-<your-username>`
- - Again in the bash terminal run the command `npm link lodown-<your-username>`
- - Open `index.html`
+ - In your bash terminal run the command `npm link lodown-<your-username>`
  - Open `index.js`
  - Update line 6 of `index.js` to reference your `lodown` library
+ - It should look something like this:
+
+```
+const _ = require('');
+```
 
 ## Step 2 - Solve
- - Write the functions outlined below, using your `lodown` library
+ - Implement the functions outlined below, using your `lodown` library
  - Code and test your solutions in `index.js`
- - Data is available to you in the Array, `customers`
- - You MUST run `os start` in order for your `index.html` to update
+ - Data is available to you in an Array stored in the variable `customers`
+ - To test your solutions run `npm start --prefix ./projects/lets-get-functional` in your terminal
 
 ### 1: `maleCount`
- - Objective: Find the number of male customers
- - Input: `Array`
- - Output: `Number`
- - Constraints: use `filter`
+ - **Objective**: Find the number of male customers
+ - **Input**: `Array`
+ - **Output**: `Number`
+ - **Constraints**: use `filter`
 
 ### 2: `femaleCount`
- - Objective: Find the number of female customers
- - Input: `Array`
- - Output: `Number`
- - Constraints: use `reduce`
+ - **Objective**: Find the number of female customers
+ - **Input**: `Array`
+ - **Output**: `Number`
+ - **Constraints**: use `reduce`
 
 ### 3: `oldestCustomer`
- - Objective: Find the oldest customer's name
- - Input: `Array`
- - Output: `String`
- - Constraints:
+ - **Objective**: Find the oldest customer's name
+ - **Input**: `Array`
+ - **Output**: `String`
+ - **Constraints**:
 
 ### 4: `youngestCustomer`
- - Objective: Find the youngest customer's name
- - Input: `Array`
- - Output: `String`
- - Constraints:
+ - **Objective**: Find the youngest customer's name
+ - **Input**: `Array`
+ - **Output**: `String`
+ - **Constraints**:
 
 ### 5: `averageBalance`
- - Objective: Find the average balance of all customers
- - Input: `Array`
- - Output: `Number`
- - Constraints:
+ - **Objective**: Find the average balance of all customers
+ - **Input**: `Array`
+ - **Output**: `Number`
+ - **Constraints**:
 
 ### 6: `firstLetterCount`
- - Objective: Find how many customer's names begin with a given letter
- - Input: `Array`, `Letter`
- - Output: `Number`
- - Constraints:
+ - **Objective**: Find how many customer's names begin with a given letter
+ - **Input**: `Array`, `Letter`
+ - **Output**: `Number`
+ - **Constraints**:
 
 ### 7: `friendFirstLetterCount`
- - Objective: Find how many friends of a given customer have names that start with a given letter
- - Input: `Array`, `Customer`, `Letter`
- - Output: `Number`
- - Constraints:
+ - **Objective**: Find how many friends of a given customer have names that start with a given letter
+ - **Input**: `Array`, `Customer`, `Letter`
+ - **Output**: `Number`
+ - **Constraints**:
 
 ### 8: `friendsCount`
- - Objective: Find the customers' names that have a given customer's name in their friends list
- - Input: `Array`, `Name`
- - Output: `Array`
- - Constraints:
+ - **Objective**: Find the customers' names that have a given customer's name in their friends list
+ - **Input**: `Array`, `Name`
+ - **Output**: `Array`
+ - **Constraints**:
 
 ### 9: `topThreeTags`
- - Objective: Find the three most common tags among all customers' associated tags
- - Input: `Array`
- - Output: `Array`
- - Constraints:
+ - **Objective**: Find the three most common tags among all customers' associated tags
+ - **Input**: `Array`
+ - **Output**: `Array`
+ - **Constraints**:
 
 ### 10: `genderCount`
- - Objective: Create a summary of genders, the output should be:
+ - **Objective**: Create a summary of genders, the output should be:
 ```javascript
 {
     male: 3,
@@ -85,6 +89,13 @@ An exercise in problem solving in the functional idiom.
     transgender: 1
 }
 ```
- - Input: `Array`
- - Output: `Object`
- - Constraints: Use `reduce`
+ - **Input**: `Array`
+ - **Output**: `Object`
+ - **Constraints**: Use `reduce`
+
+
+## Step 3: Submit
+ - When you are passing all tests, run `os submit`
+ - Select your current session
+ - Select `Let's Get Functional`
+ - If you pass all tests, you will get a green light!
